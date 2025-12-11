@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Types</title>
+    <style>
+        /* Display Types */
+        .block {
+            display: block;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        .inline {
+            display: inline;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        .inline-block {
+            display: inline-block;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            width: 200px;
+        }
+
+        .flex {
+            display: flex;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        .grid {
+            display: grid;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .display-none{
+            display:none;
+            background-color: #f2f2f2;
+            padding:20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display Types</h1>
+    <div class="block">Block Element</div>
+    <span class="inline">Inline Element</span>
+    <div class="inline-block">Inline-Block Element</div>
+    <div class="flex">
+        <div>Flex Item  1 </div>
+        <div>Flex Item  2 </div>
+        <div>Flex Item  3 </div>
+    </div>
+    <div class="grid">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+        <div>Grid Item 5</div>
+        <div>Grid Item 6</div>
+    </div>
+</body>
+</html>
