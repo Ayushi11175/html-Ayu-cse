@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries and Breakpoints</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Default Styles (Desktop) */
+        .box {
+            background-color: #f2f2f2;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        /* Media Query for Tablets (max-width: 768px) */
+        @media only screen and (max-width: 768px) {
+            .box {
+                background-color: #ccc;
+                padding: 15px;
+            }
+        }
+
+        /* Media Query for Mobile Devices (max-width: 480px) */
+        @media only screen and (max-width: 480px) {
+            .box {
+                background-color: #999;
+                padding: 10px;
+            }
+        }
+
+        /* Media Query for Large Screens (min-width: 1200px) */
+        @media only screen and (min-width: 1200px) {
+            .box {
+                background-color: #666;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Media Queries and Breakpoints</h1>
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>This is a sample box.</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>This is another sample box.</p>
+        </div>
+    </div>
+</body>
+</html>
